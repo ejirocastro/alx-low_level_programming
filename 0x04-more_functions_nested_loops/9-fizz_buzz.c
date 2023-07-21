@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints a Fizz-Buzz program
  * Return: Always 0 (success)
  */
 int main(void)

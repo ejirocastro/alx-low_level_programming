@@ -1,12 +1,12 @@
-#include "main.h"
 #include <stddef.h>
+#include "main.h"
 
 
 /**
- * _strchr - a function that locates a character in a string.
+ * _strchr - a function that locates a character
  * @s: pointer to aa character
  * @c: character pointed at
- * Return: s
+ * Return: s or NULL if character not found.
  */
 
 char *_strchr(char *s, char c)

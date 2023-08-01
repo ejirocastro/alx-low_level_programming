@@ -1,11 +1,10 @@
-#include <stddef.h>
-
+#include "main.h"
 
 /**
  * _strchr - a function that locates a character
  * @s: pointer to aa character
  * @c: character pointed at
- * Return: s or NULL if character not found.
+ * Return: s or 0.
  */
 
 char *_strchr(char *s, char c)
@@ -18,5 +17,5 @@ char *_strchr(char *s, char c)
 	}
 	s++;
 	}
-	return (NULL);
+	return (0);
 }

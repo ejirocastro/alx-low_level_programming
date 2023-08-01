@@ -3,19 +3,17 @@
  * _strchr - function that locates a character in a string
  * @s: strin pointer
  * @c: the character looked for
- * Return: &s[i]
+ * Return: s or 0
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
+	while (*s != '\0')
 	{
-		if (s[i] == c)
+		if (*s == c)
 		{
-			return (&s[i]);
+			return (s);
 		}
-		i++;
+		s++;
 	}
 	return (0);
 }

@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - Entry point
  * @argc: number  of argument
- * @argv: arguments
+ * @argv: arg
  * Return: Always 0 (success)
  */
 

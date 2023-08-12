@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-i * void *_realloc - a function that reallocates a memory
+ * void *_realloc - a function that reallocates a memory
  * @new_size: new memory
  * @old_size: edited memory
  * @ptr: pointer
@@ -31,20 +31,21 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
+
 		return (0);
 	}
-	change = malloc(new_size);
+	change = malloc(sizeof(new_size));
 
 	if (change == NULL)
 	{
 		return (0);
 	}
-	while (x < (old_size || x < new_size))
+	for (x = 0; x < (old_size || x < new_size); x++)
 	{
 		*(change + x) = origin[x];
-		x++;
 	}
 	free(ptr);
+
 	return (change);
 }
 

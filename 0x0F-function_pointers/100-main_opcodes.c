@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int x, nbytes;
-	unsigned char *code = (unsigned char *) main;
+	char *code = (char *) main;
 
 
 	if (argc != 2)
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	for (x = 0; x < nbytes; x++)
 	{
-		printf("%2x", code[x] & 0xFF);
+		printf("%02x", code[x] & 0xFF);
 		if (x != nbytes - 1)
 			printf(" ");
 	}

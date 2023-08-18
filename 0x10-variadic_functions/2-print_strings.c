@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * print_strings - function that prints strings
- * @separator: string to be printed
- * @n: number of strings
- * Return: nothing since its void
+ * print_strings - print strings
+ * @separator: string to print
+ * @n: number of string to be printed
+ * Return: return nil is string equal to NULL
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -32,6 +32,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
-
 	va_end(ag);
 }

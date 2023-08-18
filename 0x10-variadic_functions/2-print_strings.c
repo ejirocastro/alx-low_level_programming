@@ -6,6 +6,7 @@
  * print_strings - function that prints strings
  * @separator: string to be printed
  * @n: number of strings
+ * Return: nothing since its void
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -20,9 +21,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		temp = va_arg(ag, char *);
 		if (temp == NULL)
+		{
 			printf("nil");
+		}
 		else
+		{
 			printf("%s", temp);
+		}
 		if (separator != NULL && i < (n - 1))
 			printf("%s", separator);
 	}

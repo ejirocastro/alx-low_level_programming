@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * create_file - function that creats, write, & trunc file
+ * create_file - function that creats,write,trunc file
  * @filename: file to be created
  * @text_content: text to be written to the file
- * Return: 1 success
+ * Return: 1 on success
  */
 
 int create_file(const char *filename, char *text_content)
@@ -30,9 +30,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		wr = write(file, &text_content[count], 1);
 		if (wr == -1)
-		{
 			return (-1);
-		}
 	}
 	close(file);
 	return (1);

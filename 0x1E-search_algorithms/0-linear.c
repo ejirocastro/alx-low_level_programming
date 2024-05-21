@@ -2,20 +2,19 @@
 #include <stdio.h>
 
 /**
- * linear_search - searches for a value in an array of integers
- * using linear search.
+ * linear_search - searches for a value
  *
- * @array: array of integers
- * @size: size of the array
- * @value: the value to search for
+ * @array: array of numbs
+ * @size: size
+ * @value: the value to search
  *
- * Return: the index where @value is in the array or -1
+ * Return: the index where @value -1
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i;
+	size_t x;
 
-	for (i = 0; i < size; i++)
+	for (x = 0; x < size; x++)
 	{
 		printf("Value checked array[%lu] = [%i]\n", i, array[i]);
 		if (value == array[i])
